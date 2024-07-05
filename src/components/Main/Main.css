@@ -1,0 +1,78 @@
+.main-container {
+    color: white;
+    text-align: left;
+    padding: 100px 20px;
+  }
+  
+  .title {
+    font-size: 3.1rem;
+    margin-bottom: 20px;
+  }
+
+  .Para-info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left:  14rem; 
+    margin-top: 7rem;
+  }
+
+  
+  .subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    line-height: 1.7rem;
+    color:#B4B4A6;
+  }
+  
+  .code-container {
+    display: inline-flex;
+    align-items: center;
+    background: #1f1f21;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 2rem;
+    height: 2rem;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #ff6b6b, #f5a623, #7ed321, #50e3c2, #4a90e2, #9013fe);
+  }
+
+ 
+  
+  .code-snippet {
+    padding: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .copy-button {
+    background: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .copy-button:hover {
+    background: rgb(233, 230, 230);
+  }
+  
+  .code-button {
+    background:  #05050B;
+    color: white;
+    height: 3.5rem;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .code-button:hover {
+    background: #333333;
+    border: none;
+  }
+  
