@@ -14,6 +14,7 @@ function App() {
       <Page2/>
       <Page3/>
       <Page4/>
+      <Footer/>
     </div>
   );
 }
