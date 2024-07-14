@@ -1,12 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import './Main.css';
-
 const Main = () => {
+
+  const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
     const codeSnippet = "npx novu@latest dev";
     navigator.clipboard.writeText(codeSnippet).then(() => {
-      alert('Copied to clipboard!');
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset text after 2 seconds
     });
   };
   return (
@@ -17,7 +20,9 @@ const Main = () => {
         <div className='code-holder'>
             <div className="code-container">
               <div className="code-snippet">npx novu@latest dev</div>
-              <button className="copy-button" onClick={copyToClipboard}>COPY</button>
+              <button className="copy-button" onClick={copyToClipboard}>
+                {copied ? "COPIED!" : "COPY"}
+              </button>
             </div>
             <button className="code-button">READ DOCS</button>
         </div>
