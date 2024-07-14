@@ -59,6 +59,7 @@ body {
   
   .features {
     padding: 50px 20px;
+    margin-top: -1rem;
   }
   
   .features-grid {
@@ -67,7 +68,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
   
   .feature-item {

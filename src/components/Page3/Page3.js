@@ -10,7 +10,7 @@ const Page3 = () => {
                     <h1 className="title">The Notification Framework for Developers and Product Teams</h1>
                     <p className="subtitle">Fully extensible open source notifications infrastructure framework that empowers developers to provide an easy-to-use notifications platform to product teams.</p>
                 </div>
-                <button className="code-button">READ DOCS</button>
+                <button className="code-button-page3">READ DOCS</button>
             </div>
         </div>
   );
