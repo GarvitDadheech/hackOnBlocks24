@@ -4,7 +4,6 @@ import Header from './components/LandingPage/Header/Header';
 import Main from './components/LandingPage/Main/Main';
 import Footer from './components/Footer/Footer';
 import Page2 from './components/Page2/Page2';
-import Page3 from './components/Page3/Page3';
 import Page4 from './components/Page4/Page4';
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <Header/>
       <Main/>
       <Page2/>
-      <Page3/>
       <Page4/>
       <Footer/>
     </div>

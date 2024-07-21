@@ -10,11 +10,29 @@
   }
 
   .Para-info{
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left:  14rem; 
+    margin-left:  7rem; 
     margin-top: 7rem;
+  }
+
+  .code-img-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: end;
+  }
+
+  .code-img-container img{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: row;
   }
 
   
@@ -64,6 +82,7 @@
   }
   
   .code-button {
+    margin-top: 10px;
     background:  #05050B;
     color: white;
     height: 3.5rem;
@@ -76,7 +95,7 @@
   }
   .code-button:hover {
     background: #333333;
-    border: none;
+    border: 2px solid #333333;
   }
   
   @media (max-width: 1200px) {
