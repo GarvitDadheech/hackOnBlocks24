@@ -16,7 +16,7 @@ const Page4 = () => {
         <div className='container'>
         <div className="heading">
             <h1>Get Started Now</h1>
-            <p>Integrate and allow users to pay in crypto</p>
+            <p className='page4p'>Integrate and allow users to pay in crypto</p>
         </div>
         <div className='code-holder'>
             <div className="code-container">
