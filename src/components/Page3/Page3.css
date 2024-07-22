@@ -83,6 +83,9 @@
   
   .copy-button {
     background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     color: black;
     padding: 10px 20px;
@@ -161,9 +164,16 @@
     }
     .code-button{
       width: 9rem;
+      height: 3rem;
+    }
+    .code-snippet{
+      font-size: 0.8rem;
+      padding: 0px;
     }
     .copy-button{
       margin-bottom: 10px;
+      width: 60px;
+      font-size: 0.7rem;
     }
     .code-holder{
       margin-top: 1rem;
