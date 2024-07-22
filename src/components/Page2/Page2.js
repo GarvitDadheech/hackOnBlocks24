@@ -18,9 +18,9 @@ function App() {
     const codeSnippet = `import { handlePayment } from 'payment-gateway-crypto';
 
 const amount = 0.001; // Example amount in Ether
-const address = '0x1F85a21033Da743136C1808D635e8679221418d1'; // Example Ethereum address
-
-handlePayment(amount, address).then(() => {
+const address = '0x1F85a21033Da743136C1808D635e8679221418d1'; //Receiver's wallet address
+const network = 'POLzk'; //'POLzk' for Polygon zkEVM and 'BASE' for Base Sepolia network
+handlePayment(amount, address, network).then(() => {
     console.log('Payment successful');
 }).catch(error => {
     console.error('Payment failed', error);
@@ -51,9 +51,10 @@ handlePayment(amount, address).then(() => {
 import { handlePayment } from 'payment-gateway-crypto';
 
 const amount = 0.001; // Example amount in Ether
-const address = '0x1F85a21033Da743136C1808D635e8679221418d1'; // Example Ethereum address
+const address = '0x1F85a21033Da743136C1808D635e8679221418d1'; //Receiver's wallet address
+const network = 'POLzk'; //'POLzk' for Polygon zkEVM and 'BASE' for Base Sepolia network
 
-handlePayment(amount, address).then((res) => {
+handlePayment(amount, address, network).then((res) => {
     console.log(res);
 }).catch(error => {
     console.error('Payment failed', error);
