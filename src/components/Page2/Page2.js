@@ -34,7 +34,7 @@ handlePayment(amount, address, network).then(() => {
   return (
     <div className="App">
       <section className="features">
-        <h1>Integrates easily, delivering seamless transactions</h1>
+        <h1 className="heading">Integrates easily, delivering seamless transactions</h1>
         <pre>
             <code className="code">
 {`
