@@ -1,157 +1,113 @@
 .main-container {
-    color: white;
-    text-align: left;
-    padding: 100px 20px;
-  }
-  
-  .title {
-    font-size: 3.1rem;
-    margin-bottom: 20px;
-  }
+  color: white;
+  text-align: left;
+  padding: 5% 2%;
+  display: flex;
+  flex-direction: row;
+}
 
-  .Para-info{
-    width: 30%;
-    display: flex;
+.Para-info {
+  width: 50%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-bottom: 40px;
+  line-height: 1.7;
+  color: #B4B4A6;
+}
+
+.code-img-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 0;
+  justify-content: flex-end;
+  margin-top: 2.3rem;
+}
+
+.code-img-container img {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.code-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #1f1f21;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 2rem;
+  height: auto;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ff6b6b, #f5a623, #7ed321, #50e3c2, #4a90e2, #9013fe);
+}
+
+.code-snippet {
+  padding: 20px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+.copy-button, .code-button {
+  padding: 10px 20px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  transition: ease-in-out 0.4s;
+}
+
+.copy-button {
+  background: white;
+  border: none;
+  color: black;
+}
+
+.copy-button:hover {
+  background: rgb(233, 230, 230);
+}
+
+.code-button {
+  margin-top: 10px;
+  background: #05050B;
+  color: white;
+  border: 2px solid white;
+  height: 3.5rem;
+}
+
+.code-button:hover {
+  background: #333333;
+  border: 2px solid #333333;
+}
+
+@media (max-width: 768px) {
+  .main-container {
     flex-direction: column;
-    margin-left:  14rem; 
-    margin-top: 7rem;
-  }
-
-  
-  .subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 40px;
-    line-height: 1.7rem;
-    color:#B4B4A6;
-  }
-  
-  .code-container {
-    display: inline-flex;
     align-items: center;
-    background: #1f1f21;
-    padding: 10px;
-    border-radius: 8px;
-    margin-right: 2rem;
-    height: 2rem;
-    border: 2px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, #ff6b6b, #f5a623, #7ed321, #50e3c2, #4a90e2, #9013fe);
   }
 
+  .Para-info, .code-img-container {
+    width: 90%;
+    margin: 2% auto;
+  }
 
-
- 
-  
-  .code-snippet {
-    padding: 20px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+  .code-container {
+    margin-right: 0;
+    width: 100%;
   }
-  
-  .copy-button {
-    background: white;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100px;
-  }
-  
-  .copy-button:hover {
-    background: rgb(233, 230, 230);
-  }
-  
-  .code-button {
-    background:  #05050B;
-    color: white;
-    height: 3.5rem;
-    border: 2px solid white;
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: ease-in-out 0.4s;
-  }
-  .code-button:hover {
-    background: #333333;
-    border: none;
-  }
-  
-  @media (max-width: 1200px) {
-    .Para-info {
-      width: 40%;
-      margin-left: 10rem;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .Para-info {
-      width: 50%;
-      margin-left: 5rem;
-      margin-top: 5rem;
-    }
-  
-    .title {
-      font-size: 2.5rem;
-    }
-  
-    .subtitle {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .Para-info {
-      width: 70%;
-      margin-left: 3rem;
-      margin-top: 3rem;
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .subtitle {
-      font-size: 1.1rem;
-    }
-  
-    .main-container {
-      padding: 50px 10px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .Para-info {
-      width: 90%;
-      margin-left: 1rem;
-      margin-top: 2rem;
-    }
-  
-    .title {
-      font-size: 1.5rem;
-    }
-  
-    .subtitle {
-      font-size: 1rem;
-    }
-  
-    .code-container {
-      flex-direction: column;
-      height: auto;
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-  
-    .copy-button {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  
-    .code-button {
-      width: 100%;
-      margin-top: 10px;
-    }
-  }
+}

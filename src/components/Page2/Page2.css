@@ -6,6 +6,57 @@ body {
     background-color: #0a0a0a;
     color: #ffffff;
   }
+
+  .code {
+    display: inline-flex;
+    align-items: start;
+    /* background: #1f1f21; */
+    padding: 10px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #ff6b6b, #f5a623, #7ed321, #50e3c2, #4a90e2, #9013fe);
+    text-align: left;
+    font-family: IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .code::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(0, 235, 100, 0.5), transparent);
+    transform: skewX(-30deg);
+  }
+
+  .code::before {
+    animation: shine 3s infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -150%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+
+
+  .copy-code {
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 5px;
+    padding: 3px 7px;
+    cursor: pointer;
+  }
   
   .App {
     text-align: center;
@@ -17,7 +68,8 @@ body {
   
   h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
+
   }
   
   
