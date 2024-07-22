@@ -102,13 +102,15 @@
   }
   .Para-info{
     width: 90%;
-    margin-top: -3rem;
+    margin-top: -4rem;
   }
   .code-img-container {
     width: 90%;
     margin: 2%,auto;
   }
-
+  .copy-button{
+    margin-bottom: 10px;
+  }
   .code-container {
     margin-right: 0;
     width: 100%;
