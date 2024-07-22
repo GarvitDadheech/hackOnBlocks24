@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer-container">
-      © 2024 Novu. All rights reserved.
+      © DevEXP. All rights reserved.
     </footer>
   );
 };
